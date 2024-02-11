@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>BURGER</title>
+        <meta name="description" content="The best burgers in town"/>
+        <meta name="keywords" content="burgers, chips"/>
+        <meta name="author" content="Mariusz Dłubak"/>
+        <meta content="width=device-width" name="viewport" />
+        <meta name="color-scheme" content="light only">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="icon" href="images/icon.png" type="image/png">
+        <link rel="stylesheet" href="styles/booking.css">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <section id="baner">
+            <section id="info">
+                <div class="left">
+                    <i class="material-icons">schedule</i>
+                    <span class="open-hours">
+                        9:00AM - 11:00PM
+                    </span>
+                </div>
+                <div class="right">
+                    <i class="material-icons">location_on</i>
+                    <span class="location">
+                        st. Test 12
+                    </span>
+                    <i class="material-icons">call</i>
+                    <span class="contact">
+                        +12 345 678 910
+                    </span>
+                </div>
+            </section>
+            <nav>
+                <label class="logo">BURGER</label>
+                <ul id="hamburger">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="booking.html">Book table</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <section class="book-table-box">
+                <header>Book table</header>
+                <form class="book-table" id="booking-form">
+                    <div class="input-box">
+                        <input type="text" id="name" name="book_name" placeholder=" ">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" id="email" name="book_email" placeholder=" ">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="tel" id="phone" name="book_phone" placeholder=" ">
+                        <label for="phone">Phone</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="number" id="number" name="book_number_of_people" placeholder=" ">
+                        <label for="number">No of people</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="date" name="book_date" placeholder=" ">
+                        <label for="date">Date</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="time" name="book_time" placeholder=" ">
+                        <label for="time">Time</label>
+                    </div>
+                    <div class="input-box message">
+                        <textarea id="message" name="book_message"></textarea>
+                        <label for="message">Your message</label>
+                    </div>
+                </form>
+                <p id="error-info">*All data required</p>
+                <div class="buttons">
+                    <button type="reset" form="booking-form">
+                        <i class="material-icons">restart_alt</i>
+                    </button>
+                    <button type="button" form="booking-form" id="send">
+                        <span class="text">Book table</span>
+                        <i class="material-icons">arrow_forward</i>
+                    </button>
+                </div>
+            </section>
+        </section>
+        <footer>
+            <span>&copy;2023 Mariusz Dłubak. All rights reserved</span>
+        </footer>
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/booking.js"></script>
+    </body>
+</html>

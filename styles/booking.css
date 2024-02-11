@@ -1,0 +1,190 @@
+/* ----------------------MARK SELECTED WEBPAGE------------------------ */
+nav ul li:nth-child(2) a {
+    color: #FF850A;
+}
+
+/* ------------------------------BANER-------------------------------- */
+#baner {
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.6)) , url("../images/baner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ------------------------------MENU--------------------------------- */
+@media only screen and (max-width: 750px) {
+    nav.open ~ .book-table-box {
+        display: none;
+    }
+}
+
+/* -----------------------------BOOKING------------------------------- */
+.book-table-box {
+    width: 100%;
+    max-width: 970px;
+    margin-top: 10%;
+    margin-top: calc(var(--vh, 1vh) * 10);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    font-family: monospace;
+    box-shadow: 5px 5px 15px rgba(107, 107, 107, 0.39);
+    background-image: linear-gradient(rgba(36, 36, 36, 0.9),rgba(36, 36, 36, 0.85));
+}
+
+.book-table-box header {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.book-table {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.book-table .input-box {
+    max-width: 250px;
+    height: 60px;
+    position: relative;
+    margin: 20px;
+}
+
+.book-table .input-box input,
+.book-table .input-box textarea {
+    width: 250px;
+    height: 40px;
+    padding-left: 5px;
+    position: relative;
+    top: 20px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #FF850A;
+    font-family: monospace;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #FFF;
+    transition: 0.3s;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.book-table .input-box.message {
+    max-width: 900px;
+    height: 120px;
+    flex-grow: 1;
+}
+
+.book-table .input-box textarea {
+    width: 100%;
+    height: 70%;
+    top: 30px;
+    resize: none;
+}
+
+.book-table .input-box.message label {
+    top: 30px;
+    left: 10px;
+    color: #FFF;
+}
+
+.book-table .input-box label {
+    cursor: text;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    top: 30px;
+    left: 10px;
+    font-family: monospace;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s;
+}
+
+.book-table .input-box input:focus ~ label,
+.book-table .input-box input:not(:placeholder-shown) ~ label {
+    top: 0;
+    left: 5px;
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+}
+
+.book-table .input-box.message textarea.notempty ~ label {
+    top: 0;
+    left: 5px;
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+}
+
+.book-table-box #error-info {
+    display: none;
+    text-align: center;
+    color: #FF5858;
+    font-size: 16px;
+}
+
+.book-table-box .buttons {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-table-box button {
+    cursor: pointer;
+    margin: 30px 0;
+    background: none;
+    border: 0;
+    display: flex;
+    color: #FF850A;
+}
+
+.book-table-box button .text {
+    font-family: monospace;
+    font-size: 17px;
+    padding: 10px 20px;
+    border: solid 2px #FF850A;
+    transition: 0.3s;
+}
+
+.book-table-box button .material-icons {
+    max-width: 44px;
+    padding: 8px;
+    border: solid 2px #FF850A;
+    margin-left: -2px;
+    background: linear-gradient(to left, #ff840a00 50%, #FF850A 50%) right;
+    background-size: 200% 100%;
+}
+
+.book-table-box button:hover .material-icons {
+    background-position: left;
+    background-color: #FF850A;
+    color: #FFF;
+    transition: 0.5s;
+}
+
+/* --------SMALL SCREEN-------- */
+@media only screen and (max-width: 650px) {
+    .book-table-box {
+        width: 470px;
+        transition: 0.3s;
+    }
+}
+
+/* -------MEDIUM SCREEN-------- */
+@media only screen and (max-width: 1000px) {
+    .book-table-box {
+        max-width: 600px;
+        transition: 0.3s;
+    }
+}

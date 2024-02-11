@@ -1,0 +1,543 @@
+/* ----------------------MARK SELECTED WEBPAGE------------------------ */
+nav ul li:nth-child(1) a {
+    color: #FF850A;
+    transition: 0.3s;
+}
+
+/* ------------------------------BANER-------------------------------- */
+#baner {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.6)),
+                        url("../images/baner.jpg");
+                        /* Photo by Theo Crazzolara from Pixabay https://pixabay.com/pl/users/theocrazzolara-10197635/ */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.welcome {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: #FFF;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    font-family: monospace;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.welcome .first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome .logo {
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.welcome .slogan {
+    font-size: 30px;
+    transition: 0.3s;
+    color: #FF850A;
+}
+
+.welcome .second {
+    display: flex;
+    justify-content: space-around;
+}
+
+.welcome .second a {
+    margin-top: 100px;
+    color: #FF850A;
+}
+
+.welcome .booking {
+    float: left;
+    display: flex;
+    cursor: pointer;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.welcome .booking .text,
+.welcome .view-menu .text {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 20px;
+    border: solid 2px #FF850A;
+    transition: 0.3s;
+}
+
+.welcome .booking .material-icons,
+.welcome .view-menu .material-icons {
+    max-width: 50px;
+    padding: 11px;
+    border: solid 2px #FF850A;
+    margin-left: -2px;
+    background: linear-gradient(to left, #ff840a00 50%, #FF850A 50%) right;
+    background-size: 200% 100%;
+}
+
+.welcome .booking:hover .material-icons,
+.welcome .view-menu:hover .material-icons {
+    background-position: left;
+    background-color: #FF850A;
+    color: #FFF;
+    transition: 0.5s;
+}
+
+.welcome .view-menu {
+    float: right;
+    display: flex;
+    cursor: pointer;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* --------SMALL SCREEN-------- */
+@media only screen and (max-width: 650px) {
+    .welcome {
+        width: 400px;
+        transition: 0.3s;
+    }
+
+    .welcome .logo {
+        font-size: 70px;
+        transition: 0.3s;
+    }
+    
+    .welcome .slogan {
+        font-size: 20px;
+        transition: 0.3s;
+    }
+
+    .welcome .view-menu .text,
+    .welcome .booking .text {
+        padding: 0 15px;
+        transition: 0.3s;
+    }
+}
+
+/* --------MEDIUM SCREEN------- */
+@media only screen and (min-width: 650px) and (max-width: 750px) {
+    .welcome {
+        width: 450px;
+        transition: 0.3s;
+    }
+
+    .welcome .logo {
+        font-size: 85px;
+        transition: 0.3s;
+    }
+    
+    .welcome .slogan {
+        font-size: 24px;
+        transition: 0.3s;
+    }
+}
+
+/* -----LOW HEIGHT SCREEN------ */
+@media only screen and (max-height: 600px) {
+    .welcome {
+        width: 400px;
+        transition: 0.3s;
+    }
+
+    .welcome .logo {
+        font-size: 70px;
+        transition: 0.3s;
+    }
+    
+    .welcome .slogan {
+        font-size: 20px;
+        transition: 0.3s;
+    }
+
+    .welcome .second a {
+        margin-top: 30px;
+        transition: 0.3s;
+    }
+}
+
+/* --------------------ARTICLE DEFAULT STYLES------------------------- */
+main{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+main article:nth-child(odd) {
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.6)),
+                        url("../images/bg.jpg");
+                        /* Photo by https://unsplash.com/@adrienolichon */
+}
+
+main article {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+/* ---------------------------HEADERS--------------------------------- */
+main header {
+    text-align: center;
+    padding: 60px 0 30px 0;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: monospace;
+    color: white;
+}
+
+/* -----------------------------ABOUT US------------------------------ */
+.about p:first-of-type {
+    color: #FF850A;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.about p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.about .cards {
+    padding: 30px 0 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .cards > * {
+    background-color: #000000;
+    margin: 10px;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px rgba(107, 107, 107, 0.39);
+}
+
+.about .cards .icon {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about .cards .icon .material-icons, .material-symbols-outlined {
+    max-width: 100px;
+    font-size: 50px;
+    border: solid 2px rgb(102, 102, 102);
+    margin: 10px 10px 0 10px;
+    border-bottom: none;
+    padding: 25px;
+}
+
+.about .cards .text {
+    max-width: 124px;
+    background-color: #FF850A;
+    text-transform: uppercase;
+    word-spacing: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* --------------------------NEW POSITIONS---------------------------- */
+.new-positions {
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.6)), 
+                        url("../images/bg2.jpg");
+                        /* Photo by https://unsplash.com/@impatrickt */
+}
+
+.new-positions .cards {
+    padding: 30px 0 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.new-positions .cards > * {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #000000;
+    box-shadow: 5px 5px 15px rgba(107, 107, 107, 0.39);
+    margin: 10px;
+    transition: .3s;
+}
+
+.new-positions .cards img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    box-sizing: border-box;
+    outline: 2px solid rgb(102, 102, 102);
+    outline-offset: -10px;
+}
+
+.new-positions .cards .name {
+    width: 100%;
+    margin-top: -10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background-color: #FF850A;
+}
+
+.new-positions .cards .composition {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #FF850A;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.6));
+}
+
+/* ------------------------------MENU--------------------------------- */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu .menu-main-box {
+    width: 100%;
+    max-width: 970px;
+    margin: 30px 0 60px 0;
+    display: flex;
+    flex: 1 1 0;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px rgba(107, 107, 107, 0.39);
+}
+
+.menu .preview {
+    width: 200px;
+    height: 100%;
+    background-image: url("../images/maincourses.jpg");
+    /* Photo by https://unsplash.com/@dcocciardi */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: 2px solid rgb(102, 102, 102);
+    outline-offset: -10px;
+    flex-grow: 1;
+    transition: 1s;
+}
+
+.menu .menu-list-box {
+    width: 200px;
+    padding: 10px;
+    background-image: linear-gradient(rgba(36, 36, 36, 0.5),rgba(36, 36, 36, 0.4));
+    flex-grow: 8;
+}
+
+.menu .menu-list-box .menu-options {
+    background-image: linear-gradient(rgba(36, 36, 36, 0.6),rgba(36, 36, 36, 0.5));
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.menu .menu-list-box .menu-options button {
+    position: relative;
+    color: #FFFFFF;
+    font-size: 16px;
+    flex-grow: 1;
+    padding: 5px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu .menu-list-box .menu-options button.active {
+    color: #FF850A;
+    transition: 0.3s;
+}
+
+.menu .menu-list-box .menu-options:hover button {
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.menu .menu-list-box .menu-options button:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: #FF850A;
+    transition: 0.3s;
+}
+
+.menu .menu-list-box .menu-options button:after {
+    left: 0;
+    bottom: -5px;
+}
+
+.menu .menu-list-box .menu-options button:hover:after {
+    width: 100%;
+}
+
+.menu .menu-list-box .menu-options button:hover {
+    color: #FF850A;
+    transition: 0.3s;
+}
+
+.menu .menu-list-box .menu-item {
+    display: flex;
+    align-items: center;
+    border: 2px dotted rgb(102, 102, 102);
+    margin-top: -2px;
+    transition: 0.5s;
+}
+
+.menu .menu-list-box .data {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 10px 20px;
+    flex-grow: 1;
+}
+
+.menu .menu-list-box .name {
+    color: #FF850A;
+    font-size: 20px;
+}
+
+.menu .menu-list-box .composition {
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.menu .menu-list-box .cost {
+    margin-left: auto;
+    font-size: 20px;
+    padding: 20px;
+    color: #FF850A;
+}
+
+.menu .menu-list-box .menu-item:hover {
+    border: 2px solid rgb(102, 102, 102);
+    background-color: #ff840a18;
+}
+
+@media only screen and (max-width: 950px) {
+    .menu .preview {
+        display: none;
+    }
+}
+
+/* -----------------------------REVIEWS------------------------------- */
+.reviews {
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.6)),
+                        url("../images/background.jpg");
+                        /* Photo by https://unsplash.com/@adrienolichon */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews .opinion-box {
+    width: 100%;
+    max-width: 970px;
+    margin: 30px 0 60px 0;
+    display: flex;
+    flex: 1 1 0;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px rgba(107, 107, 107, 0.39);
+}
+
+.reviews .opinion-item {
+    display: flex;
+}
+
+.reviews .person {
+    width: 200px;
+    min-height: 200px;
+}
+
+.reviews .person {
+    width: 200px;
+    min-height: 200px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: 2px solid rgb(102, 102, 102);
+    outline-offset: -10px;
+    transition: 2s;
+}
+
+.reviews .opinion {
+    width: 100%;
+    padding: 20px;
+    background-image: linear-gradient(rgba(36, 36, 36, 0.9),rgba(36, 36, 36, 0.8));
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews .opinion .name {
+    color: #FF850A;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.reviews .opinion .text {
+    font-size: 16px;
+}
+
+/* ------------------------------STATS-------------------------------- */
+.stats .stats-box {
+    width: 100%;
+    max-width: 970px;
+    padding: 60px 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stats .stats-item {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.stats .stats-item .material-symbols-outlined {
+    max-width: 50px;
+    border: 0;
+    padding: 0;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.stats .stats-item .number {
+    padding: 10px 0;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.stats .stats-item .description {
+    font-size: 16px;
+    text-transform: uppercase;
+    word-spacing: 100px;
+    text-align: center;
+}

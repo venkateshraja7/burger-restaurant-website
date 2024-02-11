@@ -1,0 +1,110 @@
+/* ----------------------MARK SELECTED WEBPAGE------------------------ */
+nav ul li:nth-child(3) a {
+    color: #FF850A;
+}
+
+/* ------------------------------BANER-------------------------------- */
+#baner {
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.6)) , url("../images/baner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ------------------------------MENU--------------------------------- */
+@media only screen and (max-width: 750px) {
+    nav.open ~ .contact-us {
+        display: none;
+    }
+}
+
+/* -----------------------------CONTACT------------------------------- */
+.contact-us {
+    width: 100%;
+    max-width: 970px;
+    margin-top: 10%;
+    margin-top: calc(var(--vh, 1vh) * 10);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 15px rgba(107, 107, 107, 0.39);
+    background-image: linear-gradient(rgba(36, 36, 36, 0.9),rgba(36, 36, 36, 0.85));
+}
+
+.contact-us header {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.contact-us .info {
+    width: 485px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+}
+
+.contact-us .info .info-mark {
+    color: #FF850A;
+    padding: 30px 0 10px 40px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.contact-us .info .info-line {
+    margin: 5px 40px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dotted rgb(102, 102, 102);
+}
+
+.contact-us .info .info-details {
+    color: rgb(102, 102, 102);
+}
+
+.contact-us .info .info-line:last-of-type {
+    margin-bottom: 30px;
+}
+
+.contact-us a {
+    width: 485px;
+    min-height: 485px;
+    flex-grow: 1;
+    background-image: url("../images/map.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* --------SMALL SCREEN-------- */
+@media only screen and (max-width: 650px) {
+    .contact-us {
+        width: 470px;
+        transition: 0.3s;
+    }
+}
+
+/* -------MEDIUM SCREEN-------- */
+@media only screen and (max-width: 1000px) {
+    .contact-us {
+        max-width: 600px;
+        transition: 0.3s;
+    }
+}
